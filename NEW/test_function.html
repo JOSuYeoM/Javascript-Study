@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script>
-            function testAvg(arrDate){
-                var sum=0;
-                for(var i=0; i<arrDate.length; i++){
-                    sum+=Number(prompt(arrDate[i]+"점수는?","0"));
-                }
-                var avg= sum/arrDate.length;
-                return avg;
+
+<head>
+    <script>
+        function testAvg(arrDate) {
+            var sum = 0;
+            for (var i = 0; i < arrDate.length; i++) {
+                sum += Number(prompt(arrDate[i] + "점수는?", "0"));
             }
+            var avg = sum / arrDate.length;
+            return avg;
+        }
 
-            var arrSubject=["국어","수학"];
-            var result= testAvg(arrSubject);
+        var arrSubject = ["국어", "수학"];
+        var result = testAvg(arrSubject);
 
-            document.write("평균 점수는".fontcolor("blue")+result+"점입니다".fontcolor("blue")+"<br><br>"); 
-        </script>
-    </head>
+        document.write("평균 점수는".fontcolor("blue") + result + "점입니다".fontcolor("blue") + "<br><br>");
+    </script>
+</head>
+
 </html>
